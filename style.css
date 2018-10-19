@@ -12,18 +12,19 @@ body{
 
 #heading{
   position: relative;
-  top: 60px;
+  bottom: 55px;
   left: 100px;
-  font-size: 55px;
+  font-size: 50px;
   margin: 0 50px;
   font-weight: 1100;
   font-family: 'Playfair Display', serif;
-  color: rgb(230, 225, 225);
+  letter-spacing: 4px;
+  color: rgb(240, 245, 226);
   text-shadow:
-    -1px -1px 0 black,
-    1px -1px 0 black,
-    -1px 1px 0 black,
-    1px 1px 0 black;
+    -2px -2px 0 black,
+    2px -2px 0 black,
+    -2px 2px 0 black,
+    2px 2px 0 black;
 }
 
 ul{
@@ -80,9 +81,10 @@ a{
   display: flex;
   align-items: center;
   text-align: center;
-  color: #fff;
+  color: rgb(253, 91, 91);
+  font-weight: 600;
   font-size: 22;
-  background: #03a8c5;
+  background: #8be8f8;
   transform: translateY(100%);
   content: attr(data-text);
 }
@@ -99,7 +101,6 @@ a{
   width: 30%;
   float: left;
   margin: 0 1% 2rem 1%;
-  border: 1px solid rgb(178, 224, 11);
   border-radius: 15px;
   font-size: 18px;
   text-transform: uppercase;
@@ -109,4 +110,28 @@ a{
 .about{
   text-align: center;
   padding: 0 10px;
+}
+
+.img{
+  border: 1px solid rgb(117, 229, 248);
+}
+
+.itravel{
+  border: 1px solid rgb(178, 224, 11);
+}
+
+.allianz{
+  border: 1px solid rgb(250, 146, 198);
+}
+
+.allianz1{
+  border: 1px solid rgb(140, 250, 241);
+}
+
+.geoblue{
+  border: 1px solid rgb(253, 251, 117);
+}
+
+.atlas{
+  border: 1px solid rgb(252, 186, 87);
 }
