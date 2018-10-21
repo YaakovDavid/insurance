@@ -12,19 +12,21 @@ body{
 
 #heading{
   position: relative;
-  bottom: 55px;
-  left: 100px;
+  bottom: 92px;
+  /* left: 25px; */
   font-size: 50px;
+  display: block;
+  line-height: 45px;
   margin: 0 50px;
-  font-weight: 1100;
+  font-weight: bolder;
   font-family: 'Playfair Display', serif;
-  letter-spacing: 4px;
-  color: rgb(240, 245, 226);
+  /* letter-spacing: 4px; */
+  color: rgb(238, 253, 182);
   text-shadow:
-    -2px -2px 0 black,
-    2px -2px 0 black,
-    -2px 2px 0 black,
-    2px 2px 0 black;
+    -1px -1px 0 rgb(99, 98, 94),
+    1px -1px 0 rgb(99, 98, 94),
+    -1px 1px 0 rgb(99, 98, 94),
+    1px 1px 0 rgb(99, 98, 94);
 }
 
 ul{
@@ -50,17 +52,6 @@ a{
   border-radius: 15px;
 }
 
-.hover-animation{
-  width: 30%;
-  height: 250px;
-  display: inline-block;
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-position: center center;
-  position: relative;
-  overflow: hidden;
-}
-
 .hover-animation::after{
   top: 0;
   bottom: 0;
@@ -70,23 +61,6 @@ a{
   position: absolute;
   background: inherit;
   transition: .3s;
-}
-
-.hover-animation::after{
-  padding: 65px;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: rgb(253, 91, 91);
-  font-weight: 600;
-  font-size: 22;
-  background: #8be8f8;
-  transform: translateY(100%);
-  content: attr(data-text);
 }
 
 .hover-animation:hover:before{
@@ -99,12 +73,35 @@ a{
 
 .pod-card{
   width: 30%;
-  float: left;
+  /* float: left; */
   margin: 0 1% 2rem 1%;
   border-radius: 15px;
   font-size: 18px;
+  font-weight: 900;
   text-transform: uppercase;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  height: 250px;
+  display: inline-block;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  overflow: hidden;
+}
+
+.pod-card::after{
+  padding: 65px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-weight: 600;
+  font-size: 22;
+  transform: translateY(100%);
+  content: attr(data-text);
 }
 
 .about{
@@ -114,24 +111,138 @@ a{
 
 .img{
   border: 1px solid rgb(117, 229, 248);
+  color: rgb(51, 95, 190);
 }
 
 .itravel{
   border: 1px solid rgb(178, 224, 11);
+  color: rgb(5, 75, 26);
+
 }
 
 .allianz{
   border: 1px solid rgb(250, 146, 198);
+  color: rgb(95, 6, 51);
 }
 
 .allianz1{
   border: 1px solid rgb(140, 250, 241);
+  color: rgb(4, 87, 80);
 }
 
 .geoblue{
   border: 1px solid rgb(253, 251, 117);
+  color: rgb(165, 162, 5);
 }
 
 .atlas{
   border: 1px solid rgb(252, 186, 87);
+  color: rgb(129, 7, 7);
+}
+
+.img::after{
+  color: rgb(51, 95, 190);
+  background: rgb(117, 229, 248);
+}
+
+.itravel::after{
+  color: rgb(5, 75, 26);
+  background: rgb(178, 224, 11);
+}
+
+.allianz::after{
+  color: rgb(95, 6, 51);
+  background: rgb(250, 146, 198);
+}
+
+.allianz1::after{
+  color: rgb(4, 87, 80);
+  background: rgb(140, 250, 241);
+}
+
+.geoblue::after{
+  color: rgb(165, 162, 5);
+  background: rgb(253, 251, 117);
+}
+
+.atlas::after{
+  color: rgb(129, 7, 7);
+  background: rgb(252, 186, 87);
+}
+
+
+/* smaller letters on card */
+@media (max-width: 1060px) {
+  .pod-card{
+    font-size: 15px;
+    font-weight: 500;
+  }
+}
+
+/* smaller heading*/
+@media (max-width: 1000px) {
+  #heading{
+    letter-spacing: 0px;
+  }
+}
+
+/* smaller letters on card */
+@media (max-width: 700px) {
+  .pod-card{
+    font-size: 12px;
+    font-weight: 300;
+  }
+}
+
+/* heading */
+@media (max-width: 900px) {
+  #heading{
+    position: relative;
+    bottom: 83px;
+    font-size: 45px;
+    line-height: 40px;
+  }
+}
+
+/* heading */
+@media (max-width: 800px) {
+  #heading{
+    position: relative;
+    bottom: 80px;
+    font-size: 40px;
+  }
+}
+
+/* heading */
+@media (max-width: 700px) {
+  #heading{
+    position: relative;
+    bottom: 50px;
+    font-size: 25px;
+    line-height: 25px;
+  }
+}
+
+/* heading  and card letters*/
+@media (max-width: 500px) {
+  #heading{
+    position: relative;
+    bottom: 44px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .pod-card{
+    font-size: 11px;
+    font-weight: 100;
+  }
+}
+
+/* heading */
+@media (max-width: 400px) {
+  #heading{
+    position: relative;
+    bottom: 40px;
+    left: -20px;
+    font-size: 18px;
+  }
 }
