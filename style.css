@@ -83,6 +83,7 @@ a{
   text-transform: uppercase;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   height: 33vh;
+  vertical-align: middle;
   display: inline-block;
   -webkit-background-size: cover;
   background-size: cover;
